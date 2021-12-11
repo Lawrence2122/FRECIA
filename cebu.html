@@ -1,0 +1,106 @@
+<html>
+<head><link rel="stylesheet" type="text/css" href="cebu.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+Cebu
+</title>
+</head>
+<body>
+<div class="navbar">
+  <a href="HomePage.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Places 
+    </button>
+    <div class="dropdown-content">
+      <a href="Palawan.html">Palawan</a>
+      <a href="Manila.Html">Manila</a>
+      <a href="cebu.html">Cebu</a>
+	  <a href="Ilocos.html">Ilocos</a>
+	  <a href="Bicol.html">Bicol</a>
+    </div>
+  </div>
+  <a href="Book.html">Book Now</a>
+	<li style="float:right"><a href="About.html">About</a></li>
+</div>
+<br><br><br>
+<section>
+<div class="box">
+<p><h1 align="center">Cebu</h1>
+Queen City of the South.
+<br>Cebu attracts millions of tourists every year for many reasons, but the major pull is its pristine beaches.
+Cebu is also famous for its diverse marine life and otherworldly coral reefs
+</p>
+</div>
+</section>
+<br><br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="Tumalog falls.jpg" style="width:100%">
+  <div class="text">Tumalog Falls <br> A curtain like waterfalls that covers 
+  the entire cliff with cool and clear water,</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="simala.jpg" style="width:100%">
+  <div class="text">Simala Church <br> The design is inspired from European cathedrals.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="osmena.jpg" style="width:100%">
+  <div class="text">Osmeña Peak<br>
+  It is considered a twin to Bohol’s Chocolate Hills.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="fort san pedro.jpg" style="width:100%">
+  <div class="text">Fort San Pedro<br>Fort San Pedro is said to be the oldest and the smallest fort in 
+  the Philippines, covering an area of 2,025 square meters.,</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d251170.19455994826!2d123.70620524905206!3d10.37907183935691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a999258dcd2dfd%3A0x4c34030cdbd33507!2sCebu%20City%2C%20Cebu!5e0!3m2!1sen!2sph!4v1638784028192!5m2!1sen!2sph" 
+width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</body>
+</html>
